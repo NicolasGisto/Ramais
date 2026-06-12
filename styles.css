@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    background: #F7F7F7;
+}
+
+th, td {
+    border: none;
+border-radius: 12px;
+box-shadow: 0 2px 12px rgba(0,0,0,.08);
+    text-align: left;
+    padding: 10px;
+    height: 40px;
+}
+
+th {
+    background: #0C7A3E;
+    color: white;
+    text-align: center;
+  
+}
+
+td:first-child{
+    width: 85%;
+}
+
+td:last-child{
+    width: 90px;
+    text-align: center;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+a {
+    padding: 6px 12px;
+    background: #0ca640;;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 15px;
+    gap: 10px;
+ }
+
+.content table{
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+    flex: 1;
+}
+
+.contentE table{
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.content{
+    display: flex;
+    gap: 20px;
+    align-items: start;
+    width: 100%;
+}
+
+.tabela {
+    display: flex;
+    width: 50%;
+    align-items: center;
+}
+
+.tableE{
+    display: flex;
+    align-items: center;
+}
+
+
+.contentE{
+    display: flex;
+    flex-direction: column; 
+    gap: px;
+    width: 60%;
+    margin: 0 auto; 
+}
+
+
+.departamento-card{
+    background:#fff;
+    border-radius:16px;
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+    overflow:hidden;
+    margin-bottom:20px;
+}
+
+.departamento-header{
+    background:#0C7A3E;
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    padding:16px;
+}
+
+.departamento-body{
+    padding:10px;
+}
+
+.ramal-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px;
+    border-bottom:1px solid #eee;
+    transition:0.2s;
+}
+
+.ramal-item:hover{
+    background:#f7f7f7;
+}
+
+.ramal-item:last-child{
+    border-bottom:none;
+}
+
+.setor{
+    font-size:14px;
+    color:#333;
+}
+
+.numero{
+    background:#E8F5E9;
+    color:#0C7A3E;
+    font-weight:bold;
+    padding:6px 12px;
+    border-radius:20px;
+    min-width:70px;
+    text-align:center;
+}
