@@ -355,7 +355,7 @@ function createcollum() {
 createcollum();
 
 function createcollumAgr() {
-    const tbody = document.querySelector("#tbodyAgr")
+    const tbody = document.querySelector("#tbodyAgr");
 
     ramalsAgr.forEach((obj)=>{
         const {setor, ramal} = obj;
@@ -371,12 +371,11 @@ function createcollumAgr() {
         numeroRamal.classList.add("ramal-numero");
         numeroRamal.textContent = ramal
 
-
         item.appendChild(nomeSetor);
         item.appendChild(numeroRamal);
 
         tbody.appendChild(item);
-    })
+    });
 }
 
 createcollumAgr();
@@ -402,8 +401,11 @@ function createcollumSocial() {
         item.appendChild(nomeSetor);
         item.appendChild(numeroRamal);
 
+        tr.appendChild(nomeSetor);
+        tr.appendChild(numeroRamal);
+
         tbody.appendChild(item);
-    })
+    });
 }
 
 createcollumSocial();
@@ -413,16 +415,16 @@ function createcollumComp() {
 
     ramalsComp.forEach((obj)=>{
         const {setor, ramal} = obj;
-        const tr = document.createElement("tr");
+        const item = document.createElement("div");
 
-        let dp = document.createElement("td");
-        let numeroRamal = document.createElement("td");
+        let nomeSetor = document.createElement("span");
+        let numeroRamal = document.createElement("span");
         numeroRamal.textContent = ramal
-        dp.textContent = setor;
+        nomeSetor.textContent = setor;
 
-        tr.appendChild(dp);
+        tr.appendChild(nomeSetor);
         tr.appendChild(numeroRamal);
-        tbody.appendChild(tr);
+        tbody.appendChild(item);
     })
 }
 
