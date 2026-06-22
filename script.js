@@ -331,20 +331,25 @@ function editRow(btn) {
 function createcollum() {
     const tbody = document.querySelector("#tbodyDeptoIndustrial")
 
-    ramals.forEach((obj)=>{
+        ramalsAgr.forEach((obj)=>{
         const {setor, ramal} = obj;
-        const tr = document.createElement("tr");
 
-        const card = document.createElement("div");
-card.classList.add("ramal-item");
+        const item = document.createElement("div");
+        item.classList.add("ramal-item");
 
-card.innerHTML = `
-    <span class="setor">${setor}</span>
-    <span class="numero">${ramal}</span>
-`;
+        const nomeSetor = document.createElement("span");
+        nomeSetor.classList.add("ramail-item");
+        nomeSetor.textContent = setor;
 
-tbody.appendChild(card);
-    })
+        const numeroRamal = document.createElement("span");
+        numeroRamal.classList.add("ramal-numero");
+        numeroRamal.textContent = ramal;
+
+        item.appendChild(nomeSetor);
+        item.appendChild(numeroRamal);
+
+        tbody.appendChild(item);
+    });
 }
 
 createcollum();
@@ -354,16 +359,23 @@ function createcollumAgr() {
 
     ramalsAgr.forEach((obj)=>{
         const {setor, ramal} = obj;
-        const tr = document.createElement("tr");
 
-        let dp = document.createElement("td");
-        let numeroRamal = document.createElement("td");
+        const item = document.createElement("div");
+        item.classList.add("ramal-item");
+
+        const nomeSetor = document.createElement("span");
+        nomeSetor.classList.add("ramail-item");
+        nomeSetor.textContent = setor;
+
+        const numeroRamal = document.createElement("span");
+        numeroRamal.classList.add("ramal-numero");
         numeroRamal.textContent = ramal
-        dp.textContent = setor;
 
-        tr.appendChild(dp);
-        tr.appendChild(numeroRamal);
-        tbody.appendChild(tr);
+
+        item.appendChild(nomeSetor);
+        item.appendChild(numeroRamal);
+
+        tbody.appendChild(item);
     })
 }
 
@@ -375,16 +387,22 @@ function createcollumSocial() {
 
     ramalsSocial.forEach((obj)=>{
         const {setor, ramal} = obj;
-        const tr = document.createElement("tr");
 
-        let dp = document.createElement("td");
-        let numeroRamal = document.createElement("td");
-        numeroRamal.textContent = ramal
-        dp.textContent = setor;
+        const item = document.createElement("div");
+        item.classList.add("ramal-item");
 
-        tr.appendChild(dp);
-        tr.appendChild(numeroRamal);
-        tbody.appendChild(tr);
+        const nomeSetor = document.createElement("span");
+        nomeSetor.classList.add("ramail-item");
+        nomeSetor.textContent = setor;
+
+        const numeroRamal = document.createElement("span");
+        numeroRamal.classList.add("ramal-numero");
+        numeroRamal.textContent = ramal;
+
+        item.appendChild(nomeSetor);
+        item.appendChild(numeroRamal);
+
+        tbody.appendChild(item);
     })
 }
 
