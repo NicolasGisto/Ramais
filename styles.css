@@ -13,21 +13,6 @@ box-shadow: 0 2px 12px rgba(0,0,0,.08);
     height: 40px;
 }
 
-th {
-    background: #0C7A3E;
-    color: white;
-    text-align: center;
-  
-}
-
-td:first-child{
-    width: 85%;
-}
-
-td:last-child{
-    width: 90px;
-    text-align: center;
-}
 
 .menu{
     display: flex;
