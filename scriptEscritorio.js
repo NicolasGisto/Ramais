@@ -131,18 +131,23 @@ function createcollumApoio () {
         const tbody = document.querySelector("#tbodyApoio");
 
         ramalsApoio.forEach((obj)=>{
-            const {setor, ramal} = obj;
-            const tr = document.createElement("tr");
+        const {setor, ramal} = obj;
 
-            let dp = document.createElement("td");
-            let numeroRamal = document.createElement("td");
-            numeroRamal.textContent = ramal
-            dp.textContent = setor;
+        const item = document.createElement("div");
+        item.classList.add("ramal-item")
 
-            tr.appendChild(dp);
-            tr.appendChild(numeroRamal);
-            tbody.appendChild(tr);
-    
+        const nomeSetor = document.createElement("span");
+        nomeSetor.classList.add("ramal-item")
+        nomeSetor.textContent = setor;
+
+        const numeroRamal = document.createElement("span");
+        numeroRamal.classList.add("ramal-numero");
+        numeroRamal.textContent = ramal;
+
+        item.appendChild(nomeSetor);
+        item.appendChild(numeroRamal);
+
+        tbody.appendChild(item);
         })
 }
 
@@ -152,17 +157,23 @@ function createcollumDiretoria () {
     const tbody = document.querySelector("#tbodyDiretoria");
 
     ramalsDiretoria.forEach((obj)=>{
-        const {setor, ramal} = obj;
-        const tr = document.createElement("tr");
+    const {setor, ramal} = obj;
 
-        let dp = document.createElement("td");
-        let numeroRamal = document.createElement("td");
-        numeroRamal.textContent = ramal
-        dp.textContent = setor;
+    const item = document.createElement("div");
+    item.classList.add("ramal-item");
 
-        tr.appendChild(dp);
-        tr.appendChild(numeroRamal);
-        tbody.appendChild(tr);
+    const nomeSetor = document.createElement("span");
+    nomeSetor.classList.add("ramal-item")
+    nomeSetor.textContent = setor;
+
+    const numeroRamal = document.createElement("span");
+    numeroRamal.classList.add("ramal-numero") = ramal
+    dp.textContent = setor;
+
+    item.appendChild(nomeSetor);
+    item.appendChild(numeroRamal);
+
+    tbody.appendChild(tr);
     })
 }
 
