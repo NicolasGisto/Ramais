@@ -290,6 +290,7 @@ function createcollumRecepcao () {
 
     ramalsRecepcao.forEach((obj)=>{
         const {setor,ramal} = obj;
+
         const item = document.createElement("div");
         item.classList.add("ramal-item");
 
@@ -315,16 +316,22 @@ function createcollumContaCorrente () {
 
     ramalsContaCorrente.forEach((obj)=>{
         const {setor,ramal} = obj;
-        const tr = document.createElement("tr");
 
-        let dp = document.createElement("td");
-        let numeroRamal = document.createElement("td")
-        numeroRamal.textContent = ramal
-        dp.textContent = setor
+        const item = document.createElement("div");
+        item.classList.add("ramal-item");
 
-        tr.appendChild(dp);
-        tr.appendChild(numeroRamal);
-        tbody.appendChild(tr);
+        const nomeSetor = document.createElement("span");
+        nomeSetor.classList.add("ramal-item")
+        nomeSetor.textContent = setor;
+
+        const numeroRamal = document.createElement("span");
+        numeroRamal.classList.add("ramal-numero");
+        numeroRamal.textContent = ramal;
+
+        item.appendChild(nomeSetor);
+        item.appendChild(numeroRamal);
+
+        tbody.appendChild(item);
     })
 }
 
@@ -335,16 +342,23 @@ function createcollumTi () {
 
     ramalsTi.forEach((obj)=>{
         const {setor,ramal} = obj;
-        const tr = document.createElement("tr");
 
-        let dp = document.createElement("td");
-        let numeroRamal = document.createElement("td")
-        numeroRamal.textContent = ramal
-        dp.textContent = setor
+        const item = document.createElement("div");
+        item.classList.add("ramal-item");
+    
 
-        tr.appendChild(dp);
-        tr.appendChild(numeroRamal);
-        tbody.appendChild(tr);
+        const nomeSetor = document.createElement("span");
+        nomeSetor.classList.add("ramal-item");
+        nomeSetor.textContent = setor;
+
+        const numeroRamal = document.createElement("span");
+        numeroRamal.classList.add("ramal-numero");
+        numeroRamal.textContent = ramal;
+
+        item.appendChild(nomeSetor);
+        item.appendChild(numeroRamal);
+
+        tbody.appendChild(item);
     })
 }
 

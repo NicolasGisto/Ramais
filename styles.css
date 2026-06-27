@@ -4,15 +4,6 @@ body {
     background: #F7F7F7;
 }
 
-th, td {
-    border: none;
-border-radius: 12px;
-box-shadow: 0 2px 12px rgba(0,0,0,.08);
-    text-align: left;
-    padding: 10px;
-    height: 40px;
-}
-
 
 .menu{
     display: flex;
@@ -33,37 +24,12 @@ a {
     gap: 10px;
  }
 
-.content table{
-    border-collapse: collapse;
-    width: 100%;
-    table-layout: fixed;
-    flex: 1;
-}
-
-.contentE table{
-    border-collapse: collapse;
-    width: 100%;
-    table-layout: fixed;
-}
-
 .content{
     display: flex;
     gap: 20px;
     align-items: start;
     width: 100%;
 }
-
-.tabela {
-    display: flex;
-    width: 50%;
-    align-items: center;
-}
-
-.tableE{
-    display: flex;
-    align-items: center;
-}
-
 
 .contentE{
     display: flex;
